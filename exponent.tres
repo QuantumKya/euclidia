@@ -1,0 +1,6 @@
+[gd_resource type="RichTextEffect" script_class="RichTextSuperscript" load_steps=2 format=3 uid="uid://dodd3sj35w8ol"]
+
+[ext_resource type="Script" uid="uid://dd3sme0f5r7t4" path="res://scripts/exponent.gd" id="1_7wviv"]
+
+[resource]
+script = ExtResource("1_7wviv")

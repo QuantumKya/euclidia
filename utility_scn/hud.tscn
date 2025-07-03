@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://4eyjwl0tmxlg"]
+
+[ext_resource type="Texture2D" uid="uid://c3s78f1e2kf47" path="res://sprite/ray_ui.png" id="1_37p78"]
+[ext_resource type="Script" uid="uid://cejvbqf4d2vx" path="res://scripts/hud.gd" id="1_64ctp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_64ctp"]
+font_size = 56
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_64ctp")
+
+[node name="RayCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 576.0
+offset_right = 126.0
+offset_bottom = 599.0
+label_settings = SubResource("LabelSettings_64ctp")
+
+[node name="RayUi" type="Sprite2D" parent="."]
+position = Vector2(64, 586)
+scale = Vector2(2, 2)
+texture = ExtResource("1_37p78")
