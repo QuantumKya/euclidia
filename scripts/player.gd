@@ -15,7 +15,7 @@ class_name Player;
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-var rayLimit = 0;
+@export var rayLimit = 0;
 var activeRays: Array = [];
 
 
@@ -83,7 +83,7 @@ func shoot_ray() -> void:
 	var ray = ray_scn.instantiate();
 	var diff = get_global_mouse_position() - position;
 	var angle = atan2(diff.y, diff.x);
-	ray.position = position + (Vector2(-32, 0) if (body.flip_h) else Vector2(32, 0));
+	ray.position = position + (Vector2(-16, 0) if (body.flip_h) else Vector2(16, 0));
 	ray.points.fill(Vector2.ZERO);
 	ray.angle = angle;
 	activeRays.append(ray);

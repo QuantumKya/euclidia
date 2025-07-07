@@ -18,12 +18,12 @@ script = ExtResource("1_64ctp")
 [node name="RayCount" type="Label" parent="."]
 layout_mode = 0
 offset_left = 86.0
-offset_top = 576.0
+offset_top = 646.0
 offset_right = 126.0
-offset_bottom = 599.0
+offset_bottom = 723.0
 label_settings = SubResource("LabelSettings_64ctp")
 
 [node name="RayUi" type="Sprite2D" parent="."]
-position = Vector2(64, 586)
+position = Vector2(64, 656)
 scale = Vector2(2, 2)
 texture = ExtResource("1_37p78")

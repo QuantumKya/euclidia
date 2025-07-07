@@ -20,6 +20,11 @@ config/icon="res://icon.svg"
 EventManager="*res://scripts/event_manager.gd"
 AudioController="*res://utility_scn/audio_controller.tscn"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
@@ -72,4 +77,3 @@ Pause={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-viewport/hdr_2d=true

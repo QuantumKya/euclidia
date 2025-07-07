@@ -1,9 +1,8 @@
 extends Sprite2D
 class_name Door;
 
-@export var button: Node2D;
-
-var duration = 1.0;
+@export var buttons: Array[Node2D];
+@export var duration = 1.0;
 var org_scale;
 
 
@@ -11,8 +10,9 @@ var org_scale;
 func _ready() -> void:
 	org_scale = scale;
 	
-	button.pressed.connect(_on_button_press);
-	button.unpressed.connect(_on_button_release);
+	for button in buttons:
+		button.pressed.connect(_on_button_press);
+		button.unpressed.connect(_on_button_release);
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
